@@ -3,6 +3,7 @@
  * ENTRADAS: vt = Vector de traslacion (arreglo de enteros)
  * SALIDAS: matrizT = Matriz de traslacion 
  */
+
 function traslacion(vt){
     var matrizT = new THREE.Matrix4();
     matrizT.set(1, 0, 0, vt[0],
@@ -59,7 +60,7 @@ function Rotacion(rt,eje){
  * Salidas: rotacion del objeto       
  *  */
 
-function RotacionReal(fig, posini, rt,eje){
+function RotacionReal(fig, posini, rt,eje){ //ROTACIN REAL 
     tr = [-posini[0], -posini[1], -posini[2]]; //vector para llevar al origen
     fig.applyMatrix(traslacion(tr));//traslacion al origen
     switch(eje){
