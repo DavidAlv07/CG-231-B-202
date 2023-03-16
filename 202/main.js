@@ -1,3 +1,4 @@
+
 /**
  * Geometria: construye una geometría THREEJS y la retorna
  * ENTRADAS: vx = Arreglo de vértices para la geometría (arreglo de arreglos)
@@ -113,5 +114,6 @@ function init() {
 
     renderer.render(scene, camera);
 }
+
 
 init();  // otra forma: window.onload = init;
